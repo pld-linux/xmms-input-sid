@@ -18,7 +18,7 @@ BuildRequires:	libsidplay2-devel >= 2.1.0
 %endif
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
-# nanosid-devel ???
+# nanosid-devel - http://www.sid6581.org/NanoSID/ but no sources???
 BuildRequires:	xmms-devel >= 1.2.5
 Requires:	xmms-libs >= 1.2.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,6 +43,7 @@ Commodore - gier, dem, itp.
 %{__autoheader}
 %{__automake}
 %configure \
+	--without-nanosid \
 %ifarch alpha amd64
 	--without-sidplay2
 %endif
