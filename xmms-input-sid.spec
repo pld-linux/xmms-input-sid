@@ -2,12 +2,13 @@ Summary:	SIDPlay input plugin for X MultiMedia System
 Summary(pl):	Wtyczka wej¶ciowa SIDPlay dla X MultiMedia System
 Name:		xmms-input-sid
 Version:	0.8.0beta10
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://tnsp.org/xs-files/xmms-sid-%{version}.tar.gz
 # Source0-md5:	f4cbd537ea6731a0a7e15dafa1cbd9c0
 URL:		http://www.tnsp.org/xmms-sid.php
+BuildRequires:	automake
 BuildRequires:	libsidplay2-devel
 BuildRequires:	xmms-devel >= 1.2.5
 Requires:	xmms-libs >= 1.2.5
@@ -27,6 +28,7 @@ Commodore - gier, dem, itp.
 %setup -q -n xmms-sid-%{version}
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
