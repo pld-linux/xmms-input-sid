@@ -1,12 +1,12 @@
 Summary:	SIDPlay input plugin for X MultiMedia System
 Summary(pl):	Wtyczka wej¶ciowa dla XMMS-a odtwarzaj±ca muzykê na "SID-a"
 Name:		xmms-input-sid
-Version:	0.8.0beta10
-Release:	3
+Version:	0.8.0beta14
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://tnsp.org/xs-files/xmms-sid-%{version}.tar.gz
-# Source0-md5:	f4cbd537ea6731a0a7e15dafa1cbd9c0
+# Source0-md5:	68f6d48b7c36204fba4f9005c50d08bb
 URL:		http://www.tnsp.org/xmms-sid.php
 BuildRequires:	autoconf >= 2.56
 BuildRequires:	automake
