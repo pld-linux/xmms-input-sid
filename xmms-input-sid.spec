@@ -1,8 +1,8 @@
 Summary:	SIDPlay input plugin for X MultiMedia System
 Summary(pl):	Wtyczka wej¶ciowa SIDPlay dla X MultiMedia System
 Name:		xmms-input-sid
-Version:	0.8.0beta8
-Release:	2
+Version:	0.8.0beta10
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://tnsp.org/xs-files/xmms-sid-%{version}.tar.gz
@@ -40,5 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog FAQ NEWS README README.bugreport THANKS TODO
+%doc AUTHORS ChangeLog FAQ NEWS README THANKS TODO
 %attr(755,root,root) %{xmms_input_plugindir}/*.so
