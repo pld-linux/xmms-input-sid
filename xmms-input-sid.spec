@@ -9,7 +9,12 @@ Source0:	http://tnsp.org/xs-files/xmms-sid-%{version}.tar.gz
 # Source0-md5:	f4cbd537ea6731a0a7e15dafa1cbd9c0
 URL:		http://www.tnsp.org/xmms-sid.php
 BuildRequires:	automake
-BuildRequires:	libsidplay2-devel
+BuildRequires:	libsidplay-devel
+%ifnarch alpha amd64
+# its static "builders" cannot be linked into shared module on some archs
+BuildRequires:	libsidplay2-devel >= 2.1.0
+%endif
+# nanosid-devel ???
 BuildRequires:	xmms-devel >= 1.2.5
 Requires:	xmms-libs >= 1.2.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,13 +34,18 @@ Commodore - gier, dem, itp.
 
 %build
 cp -f /usr/share/automake/config.sub .
-%configure
+%configure \
+%ifarch alpha amd64
+	--without-sidplay2
+%endif
+
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
