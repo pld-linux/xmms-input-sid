@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://tnsp.org/xs-files/xmms-sid-%{version}.tar.gz
-# Source0-md5:	764e05e33bae112f6e26cc3212d855df
+# Source0-md5:	f4cbd537ea6731a0a7e15dafa1cbd9c0
 URL:		http://www.tnsp.org/xmms-sid.php
 BuildRequires:	libsidplay2-devel
 BuildRequires:	xmms-devel >= 1.2.5
