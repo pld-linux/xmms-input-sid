@@ -12,13 +12,14 @@ BuildRequires:	autoconf >= 2.56
 BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.5
 BuildRequires:	libsidplay-devel
-%ifnarch alpha amd64
+%ifnarch alpha %{x8664}
 # its static "builders" cannot be linked into shared module on some archs
 BuildRequires:	libsidplay2-devel >= 2.1.0
 %endif
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 # nanosid-devel - http://www.sid6581.org/NanoSID/ but no sources???
+BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRequires:	xmms-devel >= 1.2.5
 Requires:	xmms-libs >= 1.2.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,7 +45,7 @@ Commodore - gier, dem, itp.
 %{__automake}
 %configure \
 	--without-nanosid \
-%ifarch alpha amd64
+%ifarch alpha %{x8664}
 	--without-sidplay2
 %endif
 
