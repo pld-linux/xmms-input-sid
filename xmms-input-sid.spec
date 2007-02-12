@@ -1,5 +1,5 @@
 Summary:	SIDPlay input plugin for X MultiMedia System
-Summary(pl.UTF-8):   Wtyczka wejściowa dla XMMS-a odtwarzająca muzykę na "SID-a"
+Summary(pl.UTF-8):	Wtyczka wejściowa dla XMMS-a odtwarzająca muzykę na "SID-a"
 Name:		xmms-input-sid
 %define		_rc	beta15
 %define		_rel	1
