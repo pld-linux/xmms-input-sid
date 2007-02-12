@@ -1,5 +1,5 @@
 Summary:	SIDPlay input plugin for X MultiMedia System
-Summary(pl):	Wtyczka wej¶ciowa dla XMMS-a odtwarzaj±ca muzykê na "SID-a"
+Summary(pl.UTF-8):   Wtyczka wejÅ›ciowa dla XMMS-a odtwarzajÄ…ca muzykÄ™ na "SID-a"
 Name:		xmms-input-sid
 %define		_rc	beta15
 %define		_rel	1
@@ -32,9 +32,9 @@ XMMS-SID is a plugin for XMMS which provides support for playing the
 so-called "SID tunes", which are music from old Commodore computer
 programs like games, demos, etc.
 
-%description -l pl
-XMMS-SID jest wtyczk± dla XMMS-a, która umo¿liwia odtwarzanie tak
-zwanej "muzyki na SID-a", tzn. muzyki ze starych programów na
+%description -l pl.UTF-8
+XMMS-SID jest wtyczkÄ… dla XMMS-a, ktÃ³ra umoÅ¼liwia odtwarzanie tak
+zwanej "muzyki na SID-a", tzn. muzyki ze starych programÃ³w na
 Commodore - gier, dem, itp.
 
 %prep
